@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+} 
+
+header {
+  background-color: #fff;
+  padding: 13px 13px 5px 13px;  /* top right bottom left */
+  border-bottom: 0.5px solid #f0f0f0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   /* space-between moves to right, flex-start left aligns */
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center; /* Centers the items in the nav bar */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible; /* Dropdown change from hidden */
+}
+
+nav ul li {
+  float: left;
+  position: relative; /* Necessary for dropdown positioning */
+}
+
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;  /* Button Spacing */
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px; /* Adjust font size here */
+}
+
+/* Get started button formatting when in nav bar list */
+nav ul li.get-started {
+  margin-left: 10px; /* Add margin to the right of the "Get Started" button */
+}
+
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  max-width: 60px; /* this controls the height */
+  height: auto;
+}
+
+nav ul li.get-started a {
+  background-color: #000066;
+  color: #fff;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li.get-started a:hover {
+  background-color: #000080;
+}
+
+
+/* New Get Started button structure */
+.get-started a {
+  background-color: #000066;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-size: 14px; /* Adjust font size here */
+}
+
+.get-started {
+  margin-left: auto;
+}
+
+/* Dropdown Styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 175px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 0.5px solid #f0f0f0;
+
+}
+
+.dropdown-content li {
+  float: none; /* Remove float to align items vertically */
+  list-style-type: none; /* Add this to remove bullets */
+}
+
+.dropdown-content li a {
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  color: #000;
+  font-weight: 400;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
