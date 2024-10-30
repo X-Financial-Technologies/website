@@ -1,0 +1,90 @@
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+} 
+
+.footer {
+  background-color: #000;
+  padding: 20px;
+  margin-top: 40px;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-company {
+  flex-basis: 50%;
+  padding: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex-basis: 33%;
+  padding: 10px;
+}
+
+.footer-section {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.footer-title.large-title {
+  font-size: 1.2em;
+}
+
+.footer-inline-link {
+  display: inline-block;
+  margin-right: 0px; /* Add spacing between links */
+}
+
+.footer-section a,
+.footer-inline-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-section a:hover,
+.footer-inline-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-company,
+  .footer-links,
+  .footer-column,
+  .footer-section {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
